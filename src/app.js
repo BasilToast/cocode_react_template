@@ -2,9 +2,6 @@ import React from 'react';
 import { Grid } from '@material-ui/core';
 
 function App() {
-	if ('test' === 'test') console.log('test');
-	else console.log('test');
-	const test = 'tst';
 	return (
 		<div>
 			<header>

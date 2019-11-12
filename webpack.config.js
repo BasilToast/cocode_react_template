@@ -38,7 +38,10 @@ module.exports = smp.wrap({
         hot: true,
         liveReload: false,
         watchContentBase: false,
+        // noInfo: true,
+        stats: 'minimal',
         overlay: {
+            warnings: true,
             errors : true
         },
         port: 3000
