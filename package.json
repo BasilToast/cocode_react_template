@@ -4,7 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+      "start": "pm2 server.js",
+      "start:dev": "webpack-dev-server --open",
+      "watch": "webpack --watch",
+      "build": "webpack --production",
+      "build:dev": "webpack --develope"
   },
   "repository": {
     "type": "git",
