@@ -6,7 +6,7 @@ require('dotenv').config();
 module.exports = smp.wrap({
     devtool: 'cheap-module-eval-source-map',
     mode: 'development',
-    entry: __dirname + '/src/index.js,
+    entry: __dirname + '/src/index.js',
     output: {
         path: __dirname + '/public',
         filename: 'index.js'
