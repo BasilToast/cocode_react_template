@@ -7,13 +7,11 @@ function App() {
 	const test = 'tst';
 	return (
 		<div>
-			<Grid>
-				<header>
-					<h1>Hello! Cocode!!</h1>
-				</header>
-				<section></section>
-				<footer></footer>
-			</Grid>
+			<header>
+				<h1>Hello! Cocode!!</h1>
+			</header>
+			<section></section>
+			<footer></footer>
 		</div>
 	);
 }
