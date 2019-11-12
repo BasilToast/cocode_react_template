@@ -8,9 +8,15 @@
     "watch": "webpack --watch",
     "build": "webpack --production",
     "build:dev": "webpack --develope",
-    "precommit": "npm test",
+    "precommit": "npm test & lint-staged",
     "prepush": "npm test",
     "test": "ls"
+  },
+  "lint-staged": {
+    "*.js": [
+      "eslint --fix",
+      "git add"
+    ]
   },
   "repository": {
     "type": "git",
@@ -28,6 +34,7 @@
     "dotenv": "^8.2.0",
     "monaco-editor": "^0.18.1",
     "react": "^16.11.0",
+    "react-dates": "^21.3.2",
     "react-dom": "^16.11.0",
     "react-router-dom": "^5.1.2",
     "styled-components": "^4.4.1"
@@ -42,6 +49,7 @@
     "babel-loader": "^8.0.6",
     "css-loader": "^3.2.0",
     "eslint": "^6.6.0",
+    "eslint-config-prettier": "^6.5.0",
     "eslint-plugin-react": "^7.16.0",
     "husky": "^3.0.9",
     "lint-staged": "^9.4.2",

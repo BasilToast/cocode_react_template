@@ -2,7 +2,17 @@ import React from 'react';
 import {Grid} from '@material-ui/core';
 
 function App() {
+    if ('test'==='test'){
+        console.log('test');
+    } else {
+        
+    }
 
+    
+    const obj = {
+        t: 'test'
+    };
+    
     return (
         <div>
             <header>
@@ -18,4 +28,4 @@ function App() {
     );
 }
 
-export default App
+export default App;
