@@ -4,11 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-      "start": "pm2 server.js",
-      "start:dev": "webpack-dev-server --open",
-      "watch": "webpack --watch",
-      "build": "webpack --production",
-      "build:dev": "webpack --develope"
+    "start": "pm2 server.js",
+    "start:dev": "webpack-dev-server --open",
+    "watch": "webpack --watch",
+    "build": "webpack --production",
+    "build:dev": "webpack --develope"
   },
   "repository": {
     "type": "git",

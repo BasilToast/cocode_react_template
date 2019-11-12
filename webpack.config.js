@@ -1,6 +1,7 @@
 const path = require('path');
 const webpack = require('webpack');
-const smp = new require('speed-measure-webpack-plugin')();
+const SpeedMeasurePlugin = require('speed-measure-webpack-plugin');
+const smp = new SpeedMeasurePlugin();
 require('dotenv').config();
 
 module.exports = smp.wrap({
