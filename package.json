@@ -8,12 +8,12 @@
     "watch": "webpack --watch",
     "build": "webpack --production",
     "build:dev": "webpack --develope",
-    "precommit": "npm test & lint-staged",
-    "prepush": "npm test",
     "test": "ls"
   },
   "husky": {
     "hooks": {
+      "pre-commit": "npm test && lint-staged",
+      "pre-push": "npm test",
       "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
     }
   },
