@@ -3,8 +3,6 @@ import {Grid} from '@material-ui/core';
 
 function App() {
 
-    const t;
-
     return (
         <div>
             <header>
