@@ -1,8 +1,8 @@
 const path = require('path');
-const SpeedMeasurePlugin = require('speed-measure-webpack-plugin');
-const smp = new SpeedMeasurePlugin();
+const webpack = require('webpack');
+const WebpackDashBoard = require('webpack-dashboard/plugin');
 
-module.exports = smp.wrap({
+module.exports = {
     devtool: 'cheap-module-eval-source-map',
     mode: "development",
     entry : __dirname + '/src/index.js',
@@ -27,7 +27,8 @@ module.exports = smp.wrap({
         extensions: ['*', '.js', '.jsx', '.css']
     },
     plugins: [
-
+        new webpack.HotModuleReplacementPlugin(),
+        new WebpackDashBoard()
     ],
     devServer: {
         clientLogLevel: 'silent',
@@ -38,7 +39,7 @@ module.exports = smp.wrap({
         hot: true,
         liveReload: false,
         watchContentBase: false,
-        // noInfo: true,
+        // noInfo: false,
         stats: 'minimal',
         overlay: {
             warnings: true,
@@ -46,4 +47,4 @@ module.exports = smp.wrap({
         },
         port: 3000
     }
-})
+}
