@@ -8,7 +8,7 @@ import {
 	wait
 } from '@testing-library/react';
 import '@testing-library/jest-dom/extend-expect';
-import App from '../app.js';
+import App from './app.js';
 
 afterEach(cleanup);
 
