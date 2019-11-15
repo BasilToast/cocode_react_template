@@ -30,10 +30,10 @@ function App() {
 			let parsedCode = babel.transform(value, {
 				presets: [reactPreset]
 			});
-			document.getElementById('inner_root').innerText = '';
+			document.getElementById('error_console').innerText = '';
 			eval(parsedCode.code);
 		} catch (e) {
-			document.getElementById('inner_root').innerText = e.message;
+			document.getElementById('error_console').innerText = e.message;
 		}
 	}
 
@@ -58,7 +58,10 @@ ReactDOM.render(<Component/>, document.getElementById('inner_root'));
 						onChange={(ev, value) => handleEditorChange(ev, value)}
 					/>
 				</Grid>
-				<Grid id="inner_root" xs={6}></Grid>
+				<Grid container xs={6} direction="column">
+					<Grid item id="inner_root"></Grid>
+					<Grid item id="error_console" xs={4}></Grid>
+				</Grid>
 			</Grid>
 		</div>
 	);
