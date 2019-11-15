@@ -59,8 +59,8 @@ ReactDOM.render(<Component/>, document.getElementById('inner_root'));
 					/>
 				</Grid>
 				<Grid container xs={6} direction="column">
-					<Grid item id="inner_root"></Grid>
-					<Grid item id="error_console" xs={4}></Grid>
+					<Grid item id="inner_root" style={{ flex: 1 }}></Grid>
+					<Grid item id="error_console"style={{ flex: 1 }}></Grid>
 				</Grid>
 			</Grid>
 		</div>
